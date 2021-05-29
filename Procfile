@@ -1,1 +1,1 @@
-web: gunicorn Cat_Dog_classification.wsgi --log-file -
+web: gunicorn Cat_Dog_classification.wsgi
