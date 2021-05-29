@@ -25,7 +25,7 @@ SECRET_KEY = 'w^tdu&hrv%)2g3ang0u0vxxt$4gk9w22^4h71tdl7f_idwhfo('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =True
 
-ALLOWED_HOSTS = ["https://cat-dog-image-recognition.herokuapp.com","127.0.0.1"]
+ALLOWED_HOSTS = ["cat-dog-image-recognition.herokuapp.com","127.0.0.1"]
 
 
 # Application definition
