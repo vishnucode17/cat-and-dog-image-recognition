@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and dog classification</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="{% static 'logo.png' %}">
+</head>
+
+<body>
+    
+    <form method="POST" autocomplete="off">
+        {% csrf_token %}
+        <div class="input_field">
+            <h1 id="heading"><span>Cat and Dog Recognition</span></h1>
+            <div class="input_field_text">
+                <i class="fas fa-images fa-lg"></i>
+                <input type="text" placeholder="Enter the url of image" name="input_url" required>
+            </div>
+            <button>Recognize</button>
+        </div>
+        <div class="output_field">
+            <img src="{{result_img}}" alt="">
+            <h1>{{result}}</h1>
+        </div>
+    </form>
+</body>
+
+</html>
