@@ -8,7 +8,7 @@ from keras.models import load_model
 import requests
 import urllib
 from django.contrib.staticfiles.storage import staticfiles_storage
-from . import cat_dog_model
+
 # Create your views here.
 def DeepModel(request):
     result=""
