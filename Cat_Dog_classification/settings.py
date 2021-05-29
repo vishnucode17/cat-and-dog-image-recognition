@@ -23,9 +23,9 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 SECRET_KEY = 'w^tdu&hrv%)2g3ang0u0vxxt$4gk9w22^4h71tdl7f_idwhfo('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://cat-dog-image-recognition.herokuapp.com","localhost"]
 
 
 # Application definition
