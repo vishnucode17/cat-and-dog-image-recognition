@@ -13,7 +13,8 @@ from . import cat_dog_model
 def DeepModel(request):
     result=""
     test_input=''
-    model=load_model(cat_dog_model)
+    url = staticfiles_storage.url("cat_dog_model.h5")
+    model=load_model(os.path.join("/static/","cat_dog_model.h5"))
     if request.method == "POST":
         try:
             test_input=request.POST["input_url"]
