@@ -13,8 +13,7 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 def DeepModel(request):
     result=""
     test_input=''
-    url = staticfiles_storage.url("cat_dog_model.h5")
-    model=load_model(os.path.join("/static/","cat_dog_model.h5"))
+    model=load_model("static/cat_dog_model.h5")
     if request.method == "POST":
         try:
             test_input=request.POST["input_url"]
